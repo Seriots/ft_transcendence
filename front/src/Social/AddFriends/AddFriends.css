@@ -1,0 +1,80 @@
+
+.buttonViewMyFriends{
+	background: none;
+	border: none;
+	margin: 0 auto;
+	outline: none;
+	font-size: inherit;
+	text-align: inherit;
+	cursor: pointer;
+	font-family: 'Poppins';
+	background-color: #F9DA49;
+	color: #0A3D62;
+	font-weight:400;
+	padding: 6px 30px;
+	border-radius: 10px;
+	margin-bottom: 20px;
+	position: absolute;
+	bottom:0;
+	left: 0;
+	width: fit-content;
+	right: 0;
+}
+
+.main-frame{
+	position: relative;
+}
+
+/* SearchBAr */
+
+.searchBar{
+	border: none;
+	color:#FDFAD0;
+	font-size: 16px;
+	font-weight: 300;
+	width: 100%;
+	padding: 0px 0px 0px 5px;
+	border-radius: 5px;
+	box-shadow: 0px 4px 4px rgba(10, 61, 98, 0.3);
+	background-color: transparent;
+	height: 30px;
+}
+
+.searchBar::placeholder{
+	color:#FDFAD0;
+}
+.searchBar:focus{
+	outline: none;
+}
+
+.searchBarImgInput{
+	border-radius: 5px;
+	display: flex;
+	flex-direction: row;
+	background-color: #0A3D62;
+	align-items: center;
+}
+
+.searchBarImgInput img{
+	/* width: 100%; */
+	height: 17px;
+	padding-left:5px;
+}
+.searchBarFilteredUsers{
+	font-family: 'Poppins';
+	margin-top:37px;
+}
+
+.nameSearched{
+	font-size: 10px;
+	font-weight: 300;
+	color: #0A3D62;
+}
+
+
+/* Mobile */
+@media screen and (min-width: 320px) and (max-width: 767px) {
+	.buttonViewMyFriends{
+		font-size: 13px;
+	}
+}

@@ -1,0 +1,321 @@
+/* Match */
+
+.rectNoMsg{
+	position: relative;
+	overflow: hidden;
+	background-color: #FFFDE4;
+	/* margin:30px; */
+	padding-bottom: 30px;
+	box-shadow: 0px 4px 29px 7px rgba(217, 217, 217, 0.5);
+	border-radius: 20px;
+	min-height: 94vh;
+	box-sizing: border-box;
+}
+
+.matchesInProgress{
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.matchesInProgress td{
+	padding: 10px;
+	font-size:16px;
+	color:#FDFAD0;
+	text-align: center;
+}
+
+.matchesInProgress tr{
+	padding-top:13px;
+}
+
+.matchesInProgress th{
+	padding:20px 20px 0 20px;
+	font-family: 'Poppins';
+	font-weight: normal;
+	font-size:12px;
+	color:#D9D9D9;
+	text-align: center;
+}
+.even{
+	background-color: #FDFAD0;
+}
+.even td{
+	color:#0A3D62;
+}
+.teamMatch{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	/* align-items: center; */
+}
+
+.teamMemberLevel{
+	position: relative;
+	display: flex;
+	margin:2px;
+	/* width: 50%;
+  	justify-content: center;
+	align-items: center; */
+}
+.teamMemberLevel img{
+	background-color: #FDFAD0;
+	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 40%;
+	padding:5px;
+	width:35px;
+}
+.teamMemberLevel p {
+	position: absolute;
+	background: #F9DA49;
+	top:-3px;
+	z-index: 1;
+	right:-3px;
+	margin:0;
+	border-radius: 50%;
+	width:17px;
+	height: 17px;
+	text-align: center;
+	font-family: 'Poppins';
+	font-size: 10px;
+	color: #FDFAD0;
+	display: flex;
+  	justify-content: center;
+	align-items: center;
+}
+
+.gameDiv{
+	/* position: absolute; */
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #0A3D62;
+	border-radius:25px;
+	/* height: 70%; */
+	margin:30px;
+	box-shadow: 2px 2px 15px 2px rgba(206, 206, 206, 0.25);
+}
+
+.buttonMatch{
+	background: none;
+	border: none;
+	margin: 0;
+	outline: none;
+	font-size: inherit;
+	text-align: inherit;
+	cursor: pointer;
+	font-family: 'Poppins';
+	background-color: #F9DA49;
+	color: #0A3D62;
+	font-weight:400;
+	padding: 6px 30px;
+	border-radius: 10px;
+}
+.teamScore p{
+	padding-left:2px;
+	padding-right:2px;
+}
+.teamScore{
+	display:flex;
+	justify-content: center;
+}
+
+.illustrationGamingActivity{
+	position: absolute;
+	bottom: 0;
+	right:0;
+	display: flex;
+}
+
+.illustrationGamingActivity p{
+	color: #FDFAD0;
+	font-size:20px;
+	text-align: end;
+}
+
+.containerFilterMobile{
+	display:none;
+}
+
+
+/* Ipad */
+@media screen and (min-width: 768px) and (max-width: 1020px) {
+	.matchesInProgress th{
+		padding:20px 10px 0 10px;
+		font-size: 8px;
+	}
+	.illustrationGamingActivity{
+		display: none;
+	}
+	.matchesInProgress td{
+		font-size: 12px;
+	}
+	.teamMemberLevel img{
+		width:20px;
+		padding: 2px;
+	}
+	.matchesInProgress td{
+		padding:3px;
+	}
+	.teamMemberLevel p{
+		width:13px;
+		height: 13px;
+	}
+	.rectNoMsg{
+		min-height: 86vh;
+	}
+}
+
+
+/* Mobile */
+@media screen and (min-width: 320px) and (max-width: 767px) {
+	
+	.illustrationGamingActivity{
+		display: none;
+	}
+	.containerFilterMobile{
+		display: flex;
+		justify-content: flex-end;
+	}
+	.viewMore{
+		background: none;
+		border: none;
+		margin: 0;
+		outline: none;
+		font-size: 10px;
+		text-align: inherit;
+		cursor: pointer;
+		font-family: 'Poppins';
+		background-color: #F9DA49;
+		color: #0A3D62;
+		font-weight:400;
+		height: 22px;
+		padding: 0 30px;
+		box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+		border-radius: 10px;
+		margin-right: 8px;
+	}
+	.buttonFilterMobile img{
+		width: 12px;
+	}
+	.buttonFilterMobile{
+		background: none;
+		border: none;
+		margin: 0;
+		outline: none;
+		font-size: 10px;
+		text-align: inherit;
+		cursor: pointer;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: #F9DA49;
+		width: 22px;
+		height: 22px;
+		border-radius: 20px;
+		box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+		margin-right: 30px;
+	}
+	.rectNoMsg{
+		margin:0;
+		min-height: 80vh;
+	}
+	.filter{
+		display:none;
+	}
+	.filter.mobileVisible{
+		width: 75%;
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+		z-index: 2;
+		background-color: #0A3D62;
+		border-radius: 10px;
+		box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+		padding: 10px;
+	}
+	.mainTitle{
+		font-size:25px;
+	}
+	/* .viewMoreInactive{
+		background-color: #0A3D62;
+	}
+	.viewMoreInactive td{
+		color:#FDFAD0;
+	} */
+	.teamMemberLevel img{
+		border-radius: 65%;
+		width: 20px;
+		padding: 2px;
+	}
+	.teamMemberLevel p {
+		width: 13px;
+		height: 13px;
+		font-size: 7px;
+	}
+	.matchesInProgress td{
+		padding:0;
+		font-size: 10px;
+	}
+	.matchesInProgress th{
+		padding:20px 10px 0 10px;
+		/* padding:0; */
+		font-size: 8px;
+		padding-top:5px;
+	}
+	.headerRowMobile th{
+		padding: 0;
+	}
+	.matchesInProgress thead{
+		/* display: none; */
+		margin-right: 20px;
+	}
+	.buttonMatch{
+		padding: 3px 20px;
+		font-size: 8px;
+		margin-right: 10px;
+	}
+	.viewMoreActive .buttonMatch{
+		margin-right: 0;
+	}
+	.viewMoreActive td{
+		padding-top: 10px !important;
+	}
+	.gameDiv{
+		margin:15px;
+		border-radius: 10px;
+	}
+	.gameDiv.FilterActive{
+		opacity: 30%;
+	}
+	.matchesInProgress .Watch {
+		padding-right: 30px ;
+	}
+	.even{
+		background-color: #FDFAD0;
+	}
+	.headerPart2 th{
+		padding:0 0 15px 0;
+	}
+	.dateMatch, .headerRowMobile .Game, .headerRowMobile .Date{
+		padding-left: 10px !important;
+	}
+	.viewMoreActive .watchMatch, .headerRowMobile .Watch, .headerRowMobile  .Map{
+		padding-right: 10px !important;
+	}
+
+	.matchesInProgress.viewMoreInactive{
+		/* border-collapse: unset; */
+		border-radius: 15px;
+	}
+	.viewMoreInactive td
+	{
+		padding: 10px 0 10px 0;
+	}
+	.rectNoMsg{
+		height: auto;
+		overflow: visible;
+	}
+	  
+}

@@ -1,0 +1,169 @@
+.maininfo-wrapper {
+	width: 100%;
+	height: 77px;
+	background-color: #0A3D62;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 2px 2px 15px 2px rgba(206, 206, 206, 0.25);
+	margin-top: 100px;
+}
+
+.infoMainLeft, .infoMainRight{
+	display:flex;
+	width: 50%;
+	justify-content: space-evenly;
+}
+
+/* INFO ELEMENT */
+.maininfo-wrapper .info-element {
+	height: 52px;
+	padding: 0 30px 0 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/* RESET */
+.maininfo-wrapper .info-element h3, .maininfo-wrapper .info-element p {
+	margin: 0;
+}
+
+.maininfo-wrapper .info-element h3 {
+	font-family: 'Poppins', sans-serif;
+	font-size: 12px;
+	font-weight: 300;
+	text-align: center;
+	color: #FDFAD0;
+}
+
+.maininfo-wrapper .info-element p {
+	font-family: 'Poppins', sans-serif;
+	font-size: 17px;
+	font-weight: 500;
+	text-align: center;
+	color: #F9DA49;
+	margin-top: 7px;
+}
+
+.maininfo-wrapper .border {
+	border-right: 0.75px solid #FDFAD0;
+}
+
+/* MAIN ELEMENT */
+
+.maininfo-wrapper .main-element {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 20%;
+	position: relative;
+	bottom: 46px;
+}
+
+.maininfo-wrapper .main-element h2 {
+	font-family: 'Poppins', sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+	text-align: center;
+	color: #F9DA49;
+	margin: 0;
+	margin-top: 9px;
+}
+
+.maininfo-wrapper .main-element .banner {
+	position: relative;
+	width: 97px;
+	height: 110px;
+	display: flex;
+	justify-items: center;
+	align-content: center;
+	background-color: #FDFAD0;
+	border-radius: 10px;
+	box-shadow: 0px 0px 19px -3px rgba(10, 61, 98, 0.5);
+}
+
+.maininfo-wrapper .main-element .banner img {
+	width: 100%;
+	height: 100%;
+}
+
+.maininfo-wrapper .main-element .edit {
+	cursor: pointer;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	top: -12px;
+	right: -10px;
+	width: 30px;
+	height: 30px;
+	background-color: #F9DA49;
+	box-shadow: 0px 1px 4px 1px rgba(169, 169, 169, 0.3);
+	border-radius: 50%;
+}
+
+.maininfo-wrapper .main-element .edit img {
+	width: 17px;
+	height: 17px;
+}
+
+/* Popup */
+.maininfo-wrapper .popup {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255, 255, 255, 0.5);
+	z-index: 1;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Ipad */
+@media screen and (max-width: 1142px) {
+	.maininfo-wrapper .info-element {
+		padding: 0 20px 0 20px;
+	}
+	.maininfo-wrapper{
+		margin-top: 80px
+	}
+}
+
+/* Mobile */
+@media screen and (min-width: 320px) and (max-width: 767px) {
+	.infoMainRight, .infoMainLeft {
+		flex-direction: column;
+		justify-content: center;
+		padding: 10px 0 10px 0;
+	}
+	.maininfo-wrapper{
+		/* height: 100%; */
+		margin-top:50px;
+	}
+	.maininfo-wrapper .border{
+		border: none;
+	}
+	.maininfo-wrapper .info-element h3{
+		font-size: 10px;
+	}
+}
+
+@media screen and (min-width: 320px) and (max-width: 1020px) {
+	/* .maininfo-wrapper .info-element {
+		padding: 0 10px 0 10px;
+	} */
+	.maininfo-wrapper .info-element p{
+		font-size: 13px;
+	}
+	.maininfo-wrapper .main-element .banner{
+		width:70px;
+		height: 70px;
+	}
+}
+

@@ -1,0 +1,211 @@
+/* CHANNEL BUTTON */
+.channel-button {
+	width: 20px;
+	height: 20px;
+	background-color: #FDFAD0;
+	object-fit: cover;
+	border-radius: 50%;
+	padding: 4px;
+	margin-left: 2px;
+	cursor: pointer;
+}
+
+/* ASIDE CHANNEL */
+.aside-channel {
+	display: flex;
+	flex-direction: column;
+	width: 21%;
+}
+
+/* USER CHANNEL LIST */
+
+.user-channel-list {
+	flex-grow: 1;
+	margin-top: 12px;
+	background-color: #0A3D62;
+	border-radius: 10px;
+	height: 2px;
+}
+
+	/*	Basic Frame*/
+	.aside-channel .basic-frame {
+		background-color: #0A3D62;
+		box-sizing: border-box;
+		display: flex;
+		flex-direction: column;
+		border-radius: 10px;
+		align-items: center;
+	}
+
+	/* FOR SCROLLBAR */
+	.aside-channel .basic-frame > .content-wrapper {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		height: 100%;
+		overflow-y: scroll;
+		-ms-overflow-style: none;
+		scrollbar-width: none;
+		margin-bottom: 10px;
+	}
+
+	.aside-channel .basic-frame > .content-wrapper::-webkit-scrollbar {
+		display: none;
+	}
+
+	.aside-channel .basic-frame h3 {
+		font-family: 'YesevaOne', sans-serif;
+		font-style: normal;
+		font-size: 18px;
+		font-weight: 400;
+		color: #FDFAD0;
+		margin: 8px 0 0 0;
+	}
+
+	.aside-channel .basic-frame .title-wrapper {
+		height: 45px;
+		width: 100%;
+		border-bottom: 0.5px solid #FDFAD0;
+	}
+
+.ban-list-dropdown-channel {
+	display: flex;
+	justify-content: center;
+}
+
+/* USER CHANNEL ELEMENT */
+.user-channel-list-element {
+	height: 40px;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.user-channel-list-element .dm-list-element-avatar {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	margin-left: 10px;
+	background-color: #FDFAD0;
+}
+
+.user-channel-list-element .admin-avatar {
+	background-color: #F9DA49;
+}
+
+.user-channel-list-element h4 {
+	margin: 0;
+	text-align: center;
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 11px;
+	color: #FDFAD0;
+	margin-left: 10px;
+}
+
+.user-channel-list-element .user-channel-list-buttons {
+	height: 20px;
+	margin-left: auto;
+}
+
+.user-channel-list-element .user-channel-list-buttons:last-child {
+	margin-right: 10px;
+}
+
+.user-channel-list-element .admin {
+	color: #F9DA49;
+}
+
+.user-channel-list-element .dropdown-settings-user-channel {
+	background-color: #FDFAD0;
+	position: absolute;
+	right: 5px;
+	top: 34px;
+	z-index: 1;
+	padding: 4px;
+	border-radius: 5px;
+}
+
+.user-channel-list-element .dropdown-settings-user-channel p {
+	margin: 0;
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 11px;
+	color: #0A3D62;
+	cursor: pointer;
+}
+
+.user-channel-list-element .dropdown-settings-user-channel p:hover {
+	color: #F9DA49;
+}
+
+/* CHANNEL LIST ELEMENT */
+.dm-list-element .channel-button {
+	margin-left: auto;
+	margin-right: 10px;
+}
+
+.dm-list-element .button-disconnect-channel {
+	all: unset;
+	background-color: #0A3D62;
+	border-radius: 5px;
+	color: #fdfad0;
+	font-size: 12px;
+	padding: 5px;
+	margin-left: 30px;
+	cursor: pointer;
+}
+
+/* BAN LIST */
+.user-channel-list .ban-list-dropdown-channel {
+	height: 20px;
+}
+
+.user-channel-list .ban-list-dropdown-channel select
+{
+	appearance: none;
+    border-radius: 4px;
+    box-shadow: none;
+    color: #0a3d62;
+    font-size: 12px;
+    /* padding: 8px 24px 8px 10px; */
+	width: 80px;
+	background-color: #FDFAD0;
+}
+
+.user-channel-list .ban-list-dropdown-channel button {
+	all: unset;
+	background-color: #F9DA49;
+	color: #0a3d62;
+    font-size: 10px;
+	text-align: center;
+	border-radius: 5px;
+	margin-left: 5px;
+	padding: 0 5px 0 5px;
+	cursor: pointer;
+}
+
+/* INVITE TO CHANNEL */
+.content-dm-aside > .dm-list-element {
+	display: flex;
+	align-items: center;
+	height: 37px;
+	border-bottom: 0.3px solid #fdfad0;
+}
+
+.content-dm-aside > .dm-list-element h4 {
+	margin: 0 0 0 11px;
+	font-family: 'Poppins', sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 12px;
+	color: #fdfad0;
+}
+
+.content-dm-aside > .dm-list-element img {
+	height: 10px;
+	width: 10px;
+	margin-left: 10px;
+}

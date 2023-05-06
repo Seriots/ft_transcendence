@@ -1,0 +1,188 @@
+/*	GLOBAL	*/
+.authstart-wrapper, .auth2fa-wrapper, .authnameavatar-wrapper, .auth2faconfig-yes-wrapper, .auth2faconfig-no-wrapper {
+	position: absolute;
+	z-index: 2;
+	top: 5%;
+	right: 15%;
+	width: 25%;
+	min-width: 400px;
+	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+	background-color: #F9DA49;
+	border-radius: 30px;
+	box-shadow: 0px 10px 15px -3px rgba(10, 61, 98, 0.1);
+}
+
+/*	START	*/
+.authstart-wrapper {
+	height: 200px;
+	top:25%;
+}
+
+.authstart-wrapper .title-wrapper {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+/*	2FA	*/
+.auth2fa-wrapper {
+	height: 310px;
+}
+
+.auth2fa-wrapper .title-wrapper {
+	margin-top: 40px;
+	margin-bottom: 30px;
+}
+
+.auth2fa-wrapper .input-wrapper {
+	margin-bottom: 35px;
+}
+
+/*	Name & Avatar	*/
+.authnameavatar-wrapper {
+	height: 560px;
+	min-width: 500px;
+}
+
+.authnameavatar-wrapper .title-wrapper {
+	margin-top: 60px;
+	width: 62%;
+	margin-bottom: 10px;
+}
+
+.authnameavatar-wrapper .input-wrapper {
+	/* margin-top: 30px; */
+	margin-bottom: 25px;
+}
+
+.authnameavatar-wrapper .carousel-wrapper {
+	height: 200px;
+	width: 98%;
+	margin-bottom: 24px;
+}
+
+/*	2FA	Config	*/
+
+/*	YES	*/
+.auth2faconfig-yes-wrapper {
+	height: 600px;
+	width: 32%;
+}
+
+.auth2faconfig-yes-wrapper .title-wrapper {
+	margin-top: 40px;
+}
+
+.auth2faconfig-yes-wrapper .toggle-wrapper {
+	margin-top: 20px;
+}
+
+.auth2faconfig-yes-wrapper .qrcode-wrapper {
+	margin-top: 30px;
+}
+
+.auth2faconfig-yes-wrapper .input-wrapper {
+	margin-top: 20px;
+}
+
+.auth2faconfig-yes-wrapper .button-wrapper {
+	margin-top: 30px;
+}
+
+.qrcode-wrapper p {
+	margin-top: 10px;
+	margin-bottom: 0;
+}
+
+/*	NO	*/
+.auth2faconfig-no-wrapper {
+	height: 270px;
+	width: 32%;
+}
+
+.auth2faconfig-no-wrapper .title-wrapper{
+	margin-top: 40px;
+}
+
+.auth2faconfig-no-wrapper .toggle-wrapper {
+	margin-top: 20px;
+}
+
+.auth2faconfig-no-wrapper .bottom {
+	top: 90%;
+}
+
+/* MOBILE */
+
+@media screen and (max-width: 820px) {
+
+	.main-background{
+		width: 0;
+		height: 0;
+	}
+	.authstart-wrapper, .auth2fa-wrapper, .authnameavatar-wrapper, .auth2faconfig-yes-wrapper, .auth2faconfig-no-wrapper  {
+		width:90%;
+		right: 5%;
+		left:5%;
+		top:40%;
+		align-items: center;
+		margin:auto;
+		min-width: 300px;
+	}
+	.authnameavatar-wrapper, .auth2faconfig-yes-wrapper, .auth2faconfig-no-wrapper  {
+		top:25%;
+		align-items: center;
+		margin:auto;
+		min-width: 300px;
+	}
+	.authnameavatar-wrapper{
+		height: 490px;
+	}
+	.auth2fa-wrapper{
+		top:32%;
+	}
+	.auth2faconfig-no-wrapper{
+		height:250px;
+	}
+	.auth2faconfig-yes-wrapper{
+		height: 550px;
+	}
+	.our-team{
+		/* visibility: hidden; */
+		display:none;
+	}
+	.main-background {
+		min-height:0;
+		min-width: 0;
+	}
+}
+
+@media screen and (min-width:819px) and  (max-width: 970px) {
+	.our-team{
+		min-width: 280px;
+		margin-left:20px;
+		margin-bottom: 20px;
+	}
+}
+
+/* Ipad */
+@media screen and (min-width:562px) and  (max-width: 819px) {
+	.authnameavatar-wrapper, .auth2faconfig-yes-wrapper, .auth2faconfig-no-wrapper  {
+		top:30%;
+	}
+	.authstart-wrapper{
+		top:50%;
+	}
+	.auth2fa-wrapper{
+		top:40%;
+	}
+	/* .auth2faconfig-yes-wrapper{
+		height: 600px;
+	} */
+	.authnameavatar-wrapper{
+		height: 490px;
+	}
+}

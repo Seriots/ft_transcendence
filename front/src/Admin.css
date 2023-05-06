@@ -1,0 +1,13 @@
+.admin-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 400px;
+	width: 50%;
+	margin: auto;
+}
+
+.admin-wrapper button {
+	margin-top: 20px;
+}

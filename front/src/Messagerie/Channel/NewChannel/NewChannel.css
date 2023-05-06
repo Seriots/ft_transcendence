@@ -1,0 +1,77 @@
+/* INPUT CHANNEL */
+.new-dm .input-channel > .header-input-channel {
+	margin: 0 0 2px 2px;
+	font-family: 'Poppins', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	color: #FDFAD0;
+}
+
+.input-channel span {
+	display: flex;
+	align-items: center;
+	width: 410px;
+	height: 23px;
+	background-color: #FDFAD0;
+	border-radius: 5px;
+}
+
+.input-channel input {
+	all: unset;
+	font-family: 'Poppins', sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	text-decoration: underline;
+	font-size: 11px;
+	color: #B6B6B6;
+	margin-left: 8px;
+	width: 100%;
+}
+
+.input-channel input::placeholder {
+	font-family: 'Poppins', sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	text-decoration: underline;
+	font-size: 11px;
+	color: #B6B6B6;
+}
+
+/* Channel Select Buttons */
+.channel-select-buttons {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 25px;
+	margin-bottom: 12px;
+}
+
+.channel-select-buttons button {
+	all: unset;
+	width: 117px;
+	height: 25px;
+	text-align: center;
+	border: 1px solid #FDFAD0;
+	border-radius: 5px;
+	font-family: 'Poppins', sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 13px;
+	color: #FDFAD0;
+	margin-left: 15px;
+	cursor: pointer;
+}
+
+.channel-select-buttons button:first-child {
+	margin: 0;
+}
+
+.channel-select-buttons .active {
+	background-color: #F9DA49;
+	border: 1px solid #F9DA49;
+	color: #0A3D62;
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 13px;
+}

@@ -1,0 +1,87 @@
+/*	MAIN FRAME */
+.main-frame {
+	/* height: 94vh; */
+	background-color: #FFFDE4;
+	box-sizing: border-box;
+	box-shadow: 0px 4px 29px 7px rgba(217, 217, 217, 0.5);
+	border-radius: 20px;
+	min-height: 94vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px 39px 20px 39px;
+	position: relative;
+}
+
+.main-frame h1 {
+	margin: 0;
+	font-family: 'YesevaOne', sans-serif;
+	font-size: 36px;
+	color: #0A3D62;
+	font-weight: 400;
+}
+.showBlockModalActive > * {
+	opacity: 0.3;
+	transition: opacity 0.2s ease-in-out;
+  }
+  
+.showBlockModalActive.childrenMainFrame > *:last-child {
+	opacity: 1;
+  }
+/*	NAVBAR */
+.messagerie .navbar {
+	display: flex;
+	margin-top: 37px;
+	align-self: flex-start;
+}
+
+.messagerie .navbar button {
+	all: unset;
+	border-radius: 5px;
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 300;
+	font-size: 13px;
+	border: 1px solid #0A3D62;
+}
+
+.messagerie .navbar button:first-child {
+	width: 142px;
+	height: 30px;
+}
+
+.messagerie .navbar button:last-child {
+	margin-left: 15px;
+	width: 116px;
+	height: 30px;
+}
+
+.messagerie .navbar .inactive {
+	color: #0A3D62;
+}
+
+.messagerie .navbar .active {
+	background-color: #0A3D62;
+	color: #FFFDE4;
+}
+
+/* Ipad */
+@media screen and (min-width: 768px) and (max-width: 1020px) {
+	.main-frame {
+		min-height: 90vh;
+	}
+}
+
+/* Mobile */
+@media screen and (min-width: 320px) and (max-width: 767px) {
+	.main-frame {
+		min-height: 90vh;
+	}
+	.main-frame h1{
+		font-size: 25px;
+	}
+	.social .navbar{
+		margin-top: 10px;
+	}
+}
+	

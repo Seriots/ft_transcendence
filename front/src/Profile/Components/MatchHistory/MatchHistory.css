@@ -1,0 +1,91 @@
+.match-history {
+	margin-top: 18px;
+	flex-grow: 1;
+	min-height: 200px;
+	width: 100%;
+}
+
+.match-history th {
+	padding-top: 4px;
+	padding-bottom: 8px;
+}
+
+/* Team Match */
+.match-history .teamMatch {
+	position: relative;
+}
+
+.match-history .teamMatch img {
+	background-color: #FDFAD0;
+	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 40%;
+	padding:5px;
+	width:35px;
+}
+
+.match-history .teamMatch p {
+	position: absolute;
+    background: #F9DA49;
+    top: -3px;
+    right: -3px;
+    margin: 0;
+    border-radius: 50%;
+    width: 17px;
+    height: 17px;
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 10px;
+    color: #FDFAD0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Mobile */
+@media screen and (min-width: 320px) and (max-width: 767px) {
+	/* .match-history{
+		display: none;
+	} */
+}
+
+/* BIS */
+/*	BASIC FRAME	*/
+.main-frame .match-history .basic-frame {
+	background-color: #0A3D62;
+	box-shadow: 2px 2px 15px 2px rgba(206, 206, 206, 0.25);
+	border-radius: 10px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/* FOR SCROLLBAR */
+.main-frame .match-history .basic-frame > .content-wrapper {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	overflow: scroll;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+.main-frame .match-history .basic-frame > .content-wrapper::-webkit-scrollbar {
+	display: none;
+}
+
+.main-frame .match-history .basic-frame h3 {
+	font-family: 'YesevaOne', sans-serif;
+	font-style: normal;
+	font-size: 18px;
+	font-weight: 400;
+	color: #FDFAD0;
+	margin: 8px 0 0 0;
+}
+
+.main-frame .match-history  .basic-frame .title-wrapper {
+	height: 45px;
+	width: 100%;
+	border-bottom: 0.5px solid #FDFAD0;
+}

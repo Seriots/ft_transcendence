@@ -1,0 +1,26 @@
+.qrcode-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.qrcode-wrapper .QRCode {
+	height: 110px;
+	width: 110px;
+	background-color: black;
+}
+
+.qrcode-wrapper p {
+	font-family: 'Poppins';
+	font-weight: 300;
+	font-size: 13px;
+	margin-top: 5px;
+	width: 100%;
+	text-align: center;
+}
+
+@media screen and (max-width: 820px) {
+	.qrcode-wrapper p {
+		font-size:10px;
+	}
+}

@@ -1,0 +1,80 @@
+/*	FRIEND	*/
+.middleinfo-wrapper > .friends .friend {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-left: 11px;
+	margin-top: 8px;
+	gap: 0px;
+	cursor: pointer;
+}
+
+.middleinfo-wrapper > .friends .friend > .avatar-wrapper {
+	width: 56px;
+	height: 60px;
+	background-color: #FDFAD0;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+
+.middleinfo-wrapper > .friends .friend > .avatar-wrapper img {
+	padding-top: 6px;
+	width: 54px;
+	height: 54px;
+}
+
+.middleinfo-wrapper > .friends .friend > .friend-username {
+	margin-top: 2px;
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 8px;
+	color: #FDFAD0;
+}
+
+.middleinfo-wrapper > .friends .friend > .avatar-wrapper .level-wrapper {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background-color: #F9DA49;
+	border-radius: 50%;
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 11px;
+	color: #FDFAD0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	top: -8px;
+	right: -8px;
+}
+
+/*	FRIENDS	*/
+.middleinfo-wrapper > .friends {
+	width: 41%;
+}
+
+.middleinfo-wrapper > .friends .friends-in-wrapper {
+	width: 96%;
+	margin: 10px 0 10px 0;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+
+/* Mobile */
+@media screen and (min-width: 320px) and (max-width: 767px) {
+	.middleinfo-wrapper > .friends {
+		width: 100%;
+	}
+	.friends{
+		margin-top: 18px;
+}
+}

@@ -1,0 +1,357 @@
+
+.game-waiting-background {
+	background-color: #FFFDE4;
+	box-shadow: 0px 4px 29px 7px rgba(255, 255, 255, 0.5);
+	border-radius: 20px;
+	height: max-content;
+	min-height: 94vh;
+	box-sizing: border-box;
+
+	padding: 20px 0 20px 0;
+	position: relative;
+
+	/* display: block; */
+}
+
+.game-waiting-timer {
+	position: relative;
+	margin-top: 7px;
+	margin-right: 7px;
+	float: right;
+
+	/*width: 20vw;
+	max-width: 156px;
+	height: min(10vw, 5vh);
+	max-height: 56px;
+	min-height: 25px;*/
+
+	width: 20vw; 
+	max-width: 300px;
+	height: 72px;
+	max-height: 5vh;
+
+	/*max-height: 56px;*/
+	min-height: 25px;
+	
+	background: #0A3D62;
+	border-radius: 10px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+	
+	color: #FFFDE4;
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 700;
+	font-size: min(max(5px, 5vw), 30px);
+	line-height: 45px;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+}
+
+.game-waiting-players {
+	position: absolute;
+	top: max(70px, 12%);
+	width: 100%;
+	height: 40%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+
+
+	color: #FFFDE4;
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 700;
+	font-size: min(max(5px, 5vw), 30px);
+	line-height: 45px;
+	
+
+}
+
+.game-waiting-player-avatar-underdiv {
+	width: min(10vw, 9.5vh);
+	height: min(10vw, 9.5vh);
+
+	margin-left: 1%;
+	background-color: #F9DA49;
+	box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.25), 0px 4px 4px rgba(255, 255, 255, 0.25);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: min(1.5vw, 20px);
+}
+
+.game-waiting-player-avatar {
+	width: min(8vw, 7.5vh);
+	height: min(8vw, 7.5vh);
+
+
+		border-radius: min(1.5vw, 20px);
+}
+
+.game-waiting-player-name {
+	font-size: min(5vw, 40px);
+}
+
+.game-waiting-player-rank {
+	font-size: min(3.5vw, 30px);
+}
+
+.game-waiting-player {
+	height: 25%;
+	
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	
+	background: #0A3D62;
+	border-radius: 20px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+	padding: 7px;
+	margin: 7px;
+}
+
+.game-waiting-no-player {
+	height:min(0.5vw, 3px);
+	width: 20%;
+	background-color: #0A3D62;
+	border-radius: 20px;
+}
+
+.game-waiting-player-absent {
+	
+	height: 25%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background-color: #FFFDE4;
+	border: solid min(0.5vw, 3px) #0A3D62;
+	border-radius: 20px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+	padding: 7px;
+	margin: 7px;
+
+}
+
+.game-waiting-chat {
+	position: absolute;
+	bottom: 37px;
+	left: 14px;
+	width: 26vw;
+	height: 35vh;
+	background-color: #0A3D62;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 15px;
+	display: flex;
+}
+
+.game-waiting-chat > ul {
+	position: absolute;
+	/* top: 7px;
+	left: 7px; */
+
+	width: calc(100% - 24px);
+	height: 28vh;
+	overflow-y: auto;
+	overflow-wrap: break-word;
+	overflow-anchor: none;
+	scrollbar-width: 20px;
+	margin: 7px;
+	padding: 5px;
+	z-index: 0;
+
+}
+
+.game-waiting-chat > ul > li {
+	color : #DFDDC4;
+	list-style: none;
+	font-family: 'Poppins';
+	font-style: normal;
+	font-size: 20px;
+	/* font-weight: 700; */
+	/* line-height: 45px; */
+
+	padding: 4px;
+}
+
+/* width */
+.game-waiting-chat > ul::-webkit-scrollbar {
+	width: 10px;
+	direction: rtl;
+	border-radius: 5px;
+
+}
+
+/* Track */
+.game-waiting-chat> ul::-webkit-scrollbar-track {
+	background: #0A3D62;
+	border-radius: 5px;
+}
+
+/* Handle */
+.game-waiting-chat> ul::-webkit-scrollbar-thumb {
+	background: #FFFDE4;
+	border-radius: 5px;
+}
+
+/* Handle on hover */
+.game-waiting-chat> ul::-webkit-scrollbar-thumb:hover {
+	background: #DFDDC4;
+	border-radius: 5px;
+}
+
+.game-waiting-chat > input {
+	all: unset;
+	position: absolute;
+	bottom: 14px;
+	left: 4px;
+	width: 70%;
+	height: 10%;
+	max-height: 30px;
+	background-color: #FFFDE4;
+	border: 0.14rem solid #0A3D62;
+	border-radius: 10px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+	color: #0A3D62;
+	font-size: 12px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-left: 5px;
+	z-index: 1;
+}
+
+.game-waiting-chat > button {
+	all: unset;
+	position: absolute;
+	bottom:  14px;
+	right: 4px;
+	width: 15%;
+	height: 10%;
+	max-height: 30px;
+	background-color: #FFFDE4;
+	border: 0.14rem solid #0A3D62;
+	border-radius: 10px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+	color: #0A3D62;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: min(max(5px, 3vw), 15px);
+	z-index: 1;
+}
+
+.game-waiting-chat > button:active {
+	box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.game-waiting-chat > button:hover {
+	cursor: pointer;
+}
+
+
+.game-waiting-button-cancel:hover {
+	background: #0A3D62;
+}
+
+.game-waiting-button-cancel:active {
+	background: #FFFDE4;
+	box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 10px;
+	color: #0A3D62;
+}
+
+.game-waiting-button-cancel {
+	all: unset;
+	transition: none;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color:#FFFDE4;
+    border: 0.14rem solid #0A3D62;
+    border-radius: 1recm;
+    cursor: pointer;
+	
+    border-radius: 10px;
+    transition-duration: 0.4s;    
+    background-color: #0A3D62;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: min(max(5px, 5vw), 30px);
+	
+	position: absolute;
+	width: min(50%, 323px);
+	height: 72px;
+	bottom: 0px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+
+@media (max-width: 1020px) {
+	
+	.game-waiting-chat {
+		width: calc(100% - 14px - 14px);
+		height: 28vh;
+	}
+
+	.game-waiting-button-cancel {
+		transition: none;
+		left: 7px;
+		top: 26px;
+		bottom: unset;
+		transform: none;
+		width: max(min(50vw, 25vh), 200px); 
+		max-width: 300px;
+		height: 72px;
+		max-height: 5vh;
+
+		font-size: max(min(4vh, 20px), 8px);
+		/*max-height: 56px;*/
+		min-height: 25px;
+	}
+
+	.game-waiting-background {
+		left: 14px;
+		height: calc(100% - 60px - 14px - 81px);
+		width: calc(100% - 14px - 14px);
+		
+	}
+
+	.game-waiting-nav-bar {
+		left: 14px;
+		top: unset;
+		bottom: 30px;
+		width: calc(100% - 28px);
+		height: 81px;
+		/* fond beige */
+		
+		background: #FFFDE4;
+	}
+}
+
+@media (max-height: 620px) {
+	.game-waiting-chat {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 1020px) {
+    .game-waiting-background {
+		height: fit-content;
+		min-height: 88vh;
+	}
+}
+	
+/* .game-waiting-parent-div {
+	max-zoom: 1vw;
+	min-zoom: 1vw;
+} */

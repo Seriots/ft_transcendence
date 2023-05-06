@@ -1,0 +1,75 @@
+services:
+
+    nginx:
+        container_name: nginx
+        build:
+            dockerfile: Dockerfile
+            context: ./nginx
+        ports:
+            - "8080:8080"
+        env_file: ./.env
+        networks:
+            - transcenet
+        depends_on:
+            - front
+            - back
+        restart: always
+
+    front:
+        container_name: ${FRONT}
+        build:
+            context: ./${FRONT}
+            dockerfile: Dockerfile
+        env_file: ./.env
+        volumes:
+            - ${FRONT}Volume:/app/
+        networks:
+            - transcenet
+        #restart: always
+
+    back:
+        container_name: back
+        build:
+            dockerfile: Dockerfile
+            context: ./back
+        env_file: ./.env
+        volumes:
+            - backVolume:/app/
+        networks:
+            - transcenet
+        depends_on:
+            - dev-db
+        ports:
+            - "5555:5555"
+            - "3333:3333"
+        restart: always
+
+    dev-db:
+        container_name: dev-db
+        image: postgres:15
+        ports:
+            - "5432:5432"
+        env_file: ./.env
+        networks:
+            - transcenet
+        restart: always
+
+volumes:
+
+    frontVolume:
+        driver: local
+        driver_opts:
+            type: 'none'
+            device: '$PWD/front'
+            o: bind
+
+    backVolume:
+        driver: local
+        driver_opts:
+            type: 'none'
+            device: '$PWD/back'
+            o: bind
+
+networks:
+  transcenet:
+    driver: bridge

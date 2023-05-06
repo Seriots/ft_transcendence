@@ -1,0 +1,211 @@
+.customLink {
+	text-decoration: none;
+	color: inherit;
+  }
+.allmyFriendsSearch button{
+	background: none;
+	border: none;
+	padding: 0;
+	margin: 0;
+	outline: none;
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+	text-align: inherit;
+	cursor: pointer;
+	font-family: 'Poppins';
+	font-weight: 300;
+}
+
+.firstRowMyFriends{
+	display: flex;
+	flex-direction: row;
+}
+.myFriendsInfoAll{
+	display: flex;
+	flex-direction: column;
+	background-color: #0A3D62;
+	width: fit-content;
+	align-items: center;
+	justify-content: space-evenly;
+	padding: 20px;
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+
+.myFriendsInfoTxt{
+	padding-left: 5px;
+}
+
+
+.myFriendsadd img{
+	/* width: 17px; */
+	height: 30px;
+	background-color: #FDFAD0;
+	border-radius: 15px;
+	padding: 7px;
+}
+
+.myFriendsadd .active{
+	opacity: 0.3;
+}
+
+.myFriendsadd{
+	padding-left: 5px !important;
+}
+
+.myFriendsInfo, .myFriendsInfo a{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.myFriendsInfoAll p{
+	margin:0;
+	font-family: 'Poppins';
+	font-weight: 300;
+	padding: 0 5px 0 5px ;
+}
+
+.myFriendsImgUser{
+	background-color: #FDFAD0;
+	border-radius: 15px;
+	width: 80px;
+	height: 80px;
+	padding: 10px;
+}
+
+
+.myFriendsInfoSpe{
+	display: flex;
+	align-items: center;
+}
+
+.myFriendsInfoSpe p:nth-child(1){
+	color:#D9D9D9;
+	font-size: 12px;
+}
+
+.myFriendsInfoSpe p:nth-child(2){
+	color:#FDFAD0;
+	font-size: 15px;
+}
+
+.allmyFriendsSearch{
+	display: flex;
+	flex-wrap: wrap;
+
+	padding: 0;
+	justify-content: space-around;
+	/* max-height: 75vh; */
+	overflow: auto;
+}
+
+.myFriendsButton{
+	display: flex;
+	flex-direction: row;
+}
+
+.chatProfileButtonMyFriends button:first-child {
+	background-color: #F9DA49;
+    color: #0A3D62;
+    font-size: 10px;
+	text-align: center;
+    border-radius: 10px;
+    padding: 5px 0 5px 0;
+	width:140px;
+}
+
+
+.chatProfileButtonMyFriends button:last-child {
+	text-align: center;
+	background-color: #F9DA49;
+    color: #0A3D62;
+    font-size: 10px;
+    border-radius: 10px;
+    padding: 5px 0 5px 0;
+	width:140px;
+}
+
+.chatProfileButtonMyFriends{
+	display:flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+.secondRowMyFriends{
+	margin-top:20px;
+	width: 100%;
+}
+.social{
+	/* margin-top: 18px; */
+    background-color: transparent;
+    /* overflow: scroll; */
+	height: 94vh;
+}
+
+
+/* Ipad */
+@media screen and (min-width: 768px) and (max-width: 1020px) {
+	.social{
+		height: 86vh;
+	}
+	
+}
+
+
+/* .showBlockModalInactive,
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: inherit;
+  z-index: 10;
+} */
+.myFriendsInfoAll{
+	margin: 0 5px 10px 5px;
+}
+
+
+/* Mobile */
+@media screen and (min-width: 320px) and (max-width: 767px) {
+	.chatProfileButtonMyFriends{
+		flex-direction: column;
+		align-items: center;
+	}
+	.playGameButton{
+		display:none;
+	}
+	.secondRowMyFriends{
+		margin-top: 0;
+	}
+	.myFriendsInfo, .myFriendsInfo a{
+		flex-direction: column;
+	}
+	.firstRowMyFriends{
+		flex-direction: column;
+	}
+	.myFriendsButton{
+		justify-content: center;
+		margin-top: 5px;
+	}
+	.chatProfileButtonMyFriends button{
+		margin:5px 0 5px 0;	
+	}
+	.myFriendsInfoTxt{
+		margin-left:0;
+		margin-top: 5px;
+	}
+	.social{
+		height: 82vh;
+	}
+	.myFriendsInfoAll{
+		padding:10px;
+	}
+	.myFriendsInfoSpe p:nth-child(1){
+		font-size:9px;
+	}
+	.myFriendsInfoSpe p:nth-child(2){
+		font-size:13px;
+	}
+}

@@ -1,0 +1,129 @@
+/*	BACKGROUND	*/
+.main-background {
+	height: 100vh;
+	width: 100vw;
+	/* background-color: rgba(255, 255, 255, 0.94) */
+	background-image: url("./Ressources/background.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: bottom;
+	min-height: 720px;
+	min-width: 700px;
+	/* background-attachment:fixed; */
+}
+
+.logo-mobile img{
+	width:25%;
+}
+
+.logo-mobile{
+	display: none;
+	/* display: flex; */
+	/* justify-content: center; */
+}
+/* 
+.img-logo {
+	height: 440px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width:100%;
+} */
+
+/*	TEAM	*/
+
+.twoteam {
+	display:flex;
+	flex-direction:row;
+	justify-content: center;
+}
+.our-team {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 1;
+	text-align: center;
+	width: 26%;
+	min-width: 360px;
+	margin-bottom:50px;
+	margin-left:50px;
+}
+
+.profile-team img{
+	width: 100%;
+}
+
+.picture-team {
+	flex-direction: row;
+	display: flex;
+	justify-content: center;
+}
+
+.profile-team {
+	height: 51%;
+	width: 50%;
+	display: flex;
+	margin:1%;
+	align-items: center;
+	flex-direction: column;
+}
+
+.profile-team p {
+	font-family: 'Poppins', sans-serif;
+	font-size: 11px;
+	width: min-content;
+	color:#0a3d62;
+}
+
+.title-team {
+	font-family: 'YesevaOne', sans-serif;
+	font-size: 36px;
+	color:#0a3d62;
+	padding: 0;
+	margin: 0 0 10px 0;
+}
+
+/*	MOBILE	*/
+@media screen and (max-width: 820px) {
+	.our-team {
+		margin:0;
+		right: 5%;
+		left:5%;
+		width: 90%;
+	}
+	.picture-team {
+		flex-direction: column;
+	}
+	.profile-team {
+		width:30%;
+	}
+	.logo-mobile{
+		display: flex;
+		justify-content: center;
+	}
+	.logo-mobile img{
+		width: 30%;
+		margin-left: 10%;
+		margin-top: 10%;
+	}
+}
+
+@media screen and (min-width:562px) and  (max-width: 819px) {
+	.logo-mobile img{
+		margin-top: 5%;
+	}
+}
+
+@media screen and (max-width: 820px) and (max-height: 942px) {
+	
+	.profile-team {
+		width:15%;
+	}
+}
+
+@media  screen and (max-width: 500px) {
+
+	.profile-team {
+		width:30%;
+	}
+}

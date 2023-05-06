@@ -1,0 +1,125 @@
+.allFriendsSearch button{
+	background: none;
+	border: none;
+	padding: 0;
+	margin: 0;
+	outline: none;
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+	text-align: inherit;
+	cursor: pointer;
+	font-family: 'Poppins';
+	font-weight: 300;
+}
+.friendsInfoAll{
+	display: flex;
+	flex-direction: column;
+	background-color: #0A3D62;
+	width: fit-content;
+	align-items: center;
+	justify-content: space-evenly;
+	padding: 20px;
+	margin-bottom:10px;
+	border-radius: 10px;
+}
+
+.addUser img{
+	/* width: 17px;
+	height: 17px; */
+	background-color: #FDFAD0;
+	border-radius: 15px;
+	padding: 10px;
+}
+
+.addUser{
+	padding-left: 5px !important;
+}
+
+.friendsInfoNomsg, .friendsInfoNomsg a{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.errorMsgAddFriends{
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	flex-direction: column;
+	color: #F53939;
+	padding-top: 5px !important;
+}
+
+.friendsInfoAll p{
+	margin:0;
+	font-family: 'Poppins';
+	font-weight: 300;
+	padding: 0 5px 0 5px ;
+}
+
+.imgUser{
+	background-color: #FDFAD0;
+	border-radius: 15px;
+	width: 80px;
+	height: 80px;
+	padding: 10px;
+}
+
+
+.friendsInfoSpe{
+	display: flex;
+	align-items: center;
+}
+
+.friendsInfoSpe p:nth-child(1){
+	color:#D9D9D9;
+	font-size: 12px;
+}
+
+.friendsInfoSpe p:nth-child(2){
+	color:#FDFAD0;
+	font-size: 15px;
+	hyphens: auto;
+	word-wrap: break-word;
+	white-space: normal;
+	width: 120px;
+}
+
+.allFriendsSearch{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+	justify-content: space-around;
+}
+
+
+/* Mobile */
+@media screen and (min-width: 320px) and (max-width: 767px) {
+	.friendsInfoSpe p:nth-child(2){
+		font-size: 13px;
+		hyphens: auto;
+		word-wrap: break-word;
+		white-space: normal;
+		width: 60px;
+	}
+
+	.addUser img{
+		width: 17px;
+		height: 17px;
+		padding: 4px;
+	}
+	.friendsInfoSpe p:nth-child(1){
+		font-size: 9px;
+	}
+	.friendsInfoAll{
+		padding: 10px;
+		margin-bottom:5px;
+
+	}
+	.imgUser{
+		width: 50px;
+		height: 50px;
+	}
+}

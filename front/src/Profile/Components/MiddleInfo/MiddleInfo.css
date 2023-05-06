@@ -1,0 +1,109 @@
+.middleinfo-wrapper {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 18px;
+}
+
+/*	BASIC FRAME	*/
+.profile-wrapper .basic-frame {
+	background-color: #0A3D62;
+	box-shadow: 2px 2px 15px 2px rgba(206, 206, 206, 0.25);
+	border-radius: 10px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/* FOR SCROLLBAR */
+.profile-wrapper .basic-frame > .content-wrapper {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	overflow: scroll;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+.profile-wrapper .basic-frame > .content-wrapper::-webkit-scrollbar {
+	display: none;
+}
+
+.profile-wrapper .basic-frame h3 {
+	font-family: 'YesevaOne', sans-serif;
+	font-style: normal;
+	font-size: 18px;
+	font-weight: 400;
+	color: #FDFAD0;
+	margin: 8px 0 0 0;
+}
+
+.profile-wrapper .basic-frame .title-wrapper {
+	height: 45px;
+	width: 100%;
+	border-bottom: 0.5px solid #FDFAD0;
+}
+
+/* Ipad */
+@media screen and (min-width: 768px) and (max-width: 1020px) {
+	.profile-wrapper .basic-frame{
+		height: 200px !important;
+	}
+}
+
+/* Mobile */
+@media screen and (min-width: 320px) and (max-width: 767px) {
+	.profile-wrapper .basic-frame{
+		height: 200px !important;
+	}
+	.middleinfo-wrapper {
+		flex-wrap: wrap;
+	}
+	.basic-frame{
+		height: 200px !important;
+	}
+}
+
+/* BIS */
+/*	BASIC FRAME	*/
+.main-frame .middleinfo-wrapper .basic-frame {
+	background-color: #0A3D62;
+	box-shadow: 2px 2px 15px 2px rgba(206, 206, 206, 0.25);
+	border-radius: 10px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/* FOR SCROLLBAR */
+.main-frame .middleinfo-wrapper .basic-frame > .content-wrapper {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	overflow: scroll;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+.main-frame .middleinfo-wrapper .basic-frame > .content-wrapper::-webkit-scrollbar {
+	display: none;
+}
+
+.main-frame .middleinfo-wrapper .basic-frame h3 {
+	font-family: 'YesevaOne', sans-serif;
+	font-style: normal;
+	font-size: 18px;
+	font-weight: 400;
+	color: #FDFAD0;
+	margin: 8px 0 0 0;
+}
+
+.main-frame .middleinfo-wrapper .basic-frame .title-wrapper {
+	height: 45px;
+	width: 100%;
+	border-bottom: 0.5px solid #FDFAD0;
+}

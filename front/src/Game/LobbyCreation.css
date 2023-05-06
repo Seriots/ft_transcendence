@@ -1,0 +1,330 @@
+
+.game-creation-background {
+	background-color: #FFFDE4;
+	box-shadow: 0px 4px 29px 7px rgba(255, 255, 255, 0.5);
+	border-radius: 20px;
+	height: max-content;
+	min-height: 94vh;
+	box-sizing: border-box;
+
+	padding: 20px 0 20px 0;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+}
+
+.game-creation-background > h1 {
+	text-align: center;
+	font-family: 'Yeseva One';
+	font-style: normal;
+	font-weight: 900;
+	font-size: 36px;
+	line-height: 42px;
+	color: #0A3D62;
+
+}
+
+.game-creation-main-div {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+
+.game-creation-frame {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 2vw;
+	padding-right: 2vw;
+	min-width: max-content;
+	max-width: fit-content;
+	height: auto;
+	background-color: #0A3D62;
+	border-radius: 15px;
+	margin: 5px;
+	/* margin-top: 5px; */
+	/* flex-wrap: wrap; */
+}
+
+.game-creation-frame-title {
+	font-family: 'Yeseva One';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 21px;
+	color: #FDFAD0;
+}
+
+.game-creation-border {
+	width: calc(100% + 4vw);
+	height: 1px;
+	background: #FDFAD0;
+}
+
+.game-creation-player-card {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 250px;
+	height: fit-content;
+	padding-top: 1vh;
+	padding-bottom: 1vh;
+	padding-left: 1vw;
+	padding-right: 1vw;
+	margin-top: 1vh;
+	margin-bottom: 1vh;
+
+	background: #0A3D62;
+	box-shadow: 2px 2px 15px 2px rgba(206, 206, 206, 0.25);
+	border-radius: 10px;
+}
+
+.game-player-card-title {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 12px;
+	line-height: 18px;
+
+	/* Dark gray */
+
+	color: #B6B6B6;
+}
+
+.game-player-card-lvl {
+	margin-top: 5px;
+	margin-bottom: 5px;	
+}
+
+.game-player-card-info {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 22px;
+	color: #FDFAD0;
+}
+
+.game-player-card-avatar-underdiv {
+	width: 80px;
+	height: 80px;
+
+	margin-left: 1%;
+	background-color: #FDFAD0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+}
+
+.game-player-card-avatar {
+	width: 65px;
+	height: 65px;
+	
+	border-radius: 10px;
+}
+
+.game-creation-gamemode {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	min-width: 270px;
+}
+
+.game-creation-gamemode > button {
+	margin: 20px;
+}
+
+.game-creation-map > button {
+	margin: 20px;
+}
+
+.game-creation-map {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	min-width: 270px;
+}
+
+.game-creation-settings {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.game-creation-button-clicked {
+	background: #F9DA49;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 10px;
+	justify-content: center;
+	align-items: center;
+	width: 140.75px;
+	height: 60px;
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 15px;
+	color: #0A3D62;
+	line-height: 22px;
+	cursor: pointer;
+	border: unset;
+}
+
+.game-creation-button-unclicked {
+	box-sizing: border-box;		
+	border-radius: 10px;
+	justify-content: center;
+	align-items: center;
+	width: 140.75px;
+	height: 60px;
+	font-family: 'Poppins';
+	color: #FDFAD0;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 22px;
+	cursor: pointer;
+	border: 1px solid #FDFAD0;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+	border-radius: 10px;
+	background: #0A3D62;
+}
+
+.game-creation-button-impossible {
+	border-radius: 10px;
+	justify-content: center;
+	align-items: center;
+	width: 140.75px;
+	height: 60px;
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 22px;
+	opacity: 0.3;
+	cursor: pointer;
+	color: #0A3D62;
+	border: unset;
+}
+
+.game-creation-button-impossible:active {
+	border-radius: 10px;
+	justify-content: center;
+	align-items: center;
+	width: 140.75px;
+	height: 60px;
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 22px;
+	opacity: 0.3;
+	cursor: pointer;
+	color: #0A3D62;
+	border: unset;
+}
+
+.game-creation-button-div {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-top: 20px;
+}
+
+.game-creation-button:hover {
+	background: #0A3D62;
+}
+
+.game-creation-button:active {
+	background: #FFFDE4;
+	box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 10px;
+	color: #0A3D62;
+}
+
+.game-creation-button {
+	all: unset;
+	transition: none;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color:#FFFDE4;
+    border: 0.14rem solid #0A3D62;
+    border-radius: 1recm;
+    cursor: pointer;
+	
+    border-radius: 10px;
+    transition-duration: 0.4s;    
+    background-color: #0A3D62;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: min(max(5px, 4vw), 20px);
+	
+	width: 270px;
+	height: 60px;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	margin: 5px;
+}
+
+	/* BASIC FRAME	
+.game-creation-background .basic-frame {
+	background-color: #0A3D62;
+	box-shadow: 2px 2px 15px 2px rgba(206, 206, 206, 0.25);
+	border-radius: 10px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/* FOR SCROLLBAR */
+/* .game-creation-background .basic-frame > .content-wrapper {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	overflow: scroll;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+.game-creation-background .basic-frame > .content-wrapper::-webkit-scrollbar {
+	display: none;
+}
+
+.game-creation-background .basic-frame h3 {
+	font-family: 'YesevaOne', sans-serif;
+	font-style: normal;
+	font-size: 18px;
+	font-weight: 400;
+	color: #FDFAD0;
+	margin: 8px 0 0 0;
+}
+
+.game-creation-background .basic-frame .title-wrapper {
+	height: 45px;
+	width: 100%;
+	border-bottom: 0.5px solid #FDFAD0;
+} */
+
+/* Ipad */
+@media screen and (max-width: 1020px) {
+    .game-creation-background {
+		height: max-content;
+		min-height: 88vh;
+		padding-bottom: 75px;
+	}
+}
