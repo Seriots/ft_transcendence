@@ -74,7 +74,7 @@ export class UserService {
 	}
 
 	Logout(@Res() res: Response) {
-		res.clearCookie("jwt", { httpOnly: true });
+		res.clearCookie("jwt", { httpOnly: false });
 		return res.status(200).json({ message: "Logged out" });
 	}
 
