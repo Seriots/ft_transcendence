@@ -135,7 +135,6 @@ export class AuthService {
 		console.log(user.login + ": " + token);
 		try {
 			res.cookie("jwt", token, {
-				httpOnly: false,
 				secure: true,
 				sameSite: "lax",
 			});
