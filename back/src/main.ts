@@ -13,7 +13,7 @@ async function bootstrap() {
 	// "https://" + config.get("HOST_T") + ":" + config.get("PORT_GLOBAL"),
 
 	app.enableCors({
-		origin: "https://transcendence.leo-giband.com/",
+		origin: "https://transcendence.leo-giband.com",
 		preflightContinue: true,
 		methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
 		credentials: true,
