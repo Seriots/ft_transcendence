@@ -51,7 +51,7 @@ const MatchesInProgress: React.FC<MatchesInProgressProps> = ({
 
 	useEffect(() => {
 		axios
-			.get('http://' + env.host + ':' + env.port + '/games/all/playing', {
+			.get('https://' + env.host + ':' + env.port + '/games/all/playing', {
 				withCredentials: true,
 			})
 			.then((res) => {
@@ -121,7 +121,7 @@ const MatchesInProgress: React.FC<MatchesInProgressProps> = ({
 						<div className="teamMemberLevel" key={index}>
 							<img
 								src={
-									'http://' +
+									'https://' +
 									env.host +
 									':' +
 									env.port +

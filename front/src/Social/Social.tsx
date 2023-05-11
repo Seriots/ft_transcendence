@@ -24,7 +24,7 @@ export const Social = ({ socketQueue }: any) => {
 	const fetchUsers = useCallback(async () => {
 		try {
 			const response = await axios.get<User[]>(
-				'http://' + env.host + ':' + env.port + '/users/login',
+				'https://' + env.host + ':' + env.port + '/users/login',
 				{ withCredentials: true }
 			);
 			setUsers(response.data);
@@ -35,7 +35,7 @@ export const Social = ({ socketQueue }: any) => {
 	const fetchFriends = useCallback(async () => {
 		try {
 			const response = await axios.get(
-				'http://' + env.host + ':' + env.port + '/friend/friends',
+				'https://' + env.host + ':' + env.port + '/friend/friends',
 				{ withCredentials: true }
 			);
 			setFriends(response.data.friendsList);
@@ -49,7 +49,7 @@ export const Social = ({ socketQueue }: any) => {
 	const fetchBlocked = useCallback(async () => {
 		try {
 			const response = await axios.get(
-				'http://' + env.host + ':' + env.port + '/friend/blocked',
+				'https://' + env.host + ':' + env.port + '/friend/blocked',
 				{ withCredentials: true }
 			);
 			setBlocked(response.data.blockedList);
@@ -61,7 +61,7 @@ export const Social = ({ socketQueue }: any) => {
 	useEffect(() => {
 		const fetchData = async () => {
 			const response = await axios.get(
-				'http://' + env.host + ':' + env.port + '/users/me',
+				'https://' + env.host + ':' + env.port + '/users/me',
 				{
 					withCredentials: true,
 				}
@@ -80,7 +80,7 @@ export const Social = ({ socketQueue }: any) => {
 	const AddFriendFunction = async (username: string) => {
 		try {
 			await axios.post(
-				'http://' +
+				'https://' +
 					env.host +
 					':' +
 					env.port +
@@ -100,7 +100,7 @@ export const Social = ({ socketQueue }: any) => {
 	const BlockFriend = async (username: string) => {
 		try {
 			await axios.post(
-				'http://' +
+				'https://' +
 					env.host +
 					':' +
 					env.port +
@@ -120,7 +120,7 @@ export const Social = ({ socketQueue }: any) => {
 	const UnBlockFriend = async (username: string) => {
 		try {
 			await axios.post(
-				'http://' +
+				'https://' +
 					env.host +
 					':' +
 					env.port +
@@ -140,7 +140,7 @@ export const Social = ({ socketQueue }: any) => {
 	const RemoveFriend = async (username: string) => {
 		try {
 			await axios.post(
-				'http://' +
+				'https://' +
 					env.host +
 					':' +
 					env.port +
@@ -160,7 +160,7 @@ export const Social = ({ socketQueue }: any) => {
 	const AcceptFriend = async (username: string) => {
 		try {
 			await axios.patch(
-				'http://' +
+				'https://' +
 					env.host +
 					':' +
 					env.port +
@@ -180,7 +180,7 @@ export const Social = ({ socketQueue }: any) => {
 	const DeclineFriend = async (username: string) => {
 		try {
 			await axios.patch(
-				'http://' +
+				'https://' +
 					env.host +
 					':' +
 					env.port +

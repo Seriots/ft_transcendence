@@ -17,7 +17,7 @@ export const Profile = ({ socketQueue }: any) => {
 	const [user, setUser] = useState({} as any);
 	const handleLogout = async () => {
 		await axios.get(
-			'http://' + env.host + ':' + env.port + '/users/logout',
+			'https://' + env.host + ':' + env.port + '/users/logout',
 			{
 				withCredentials: true,
 			}
@@ -30,7 +30,7 @@ export const Profile = ({ socketQueue }: any) => {
 		data,
 		error,
 	}: { isLoading: boolean; data: any; error: boolean } = useAxios(
-		'http://' +
+		'https://' +
 			env.host +
 			':' +
 			env.port +

@@ -43,7 +43,7 @@ export const ProfileQR = ({ handleTrigger }: ProfileQRProps) => {
 		async function fetchQR() {
 			try {
 				const { data } = await axios.post(
-					'http://' + env.host + ':' + env.port +'/auth/2fa/setup',
+					'https://' + env.host + ':' + env.port +'/auth/2fa/setup',
 					{},
 					{
 						withCredentials: true,
@@ -68,7 +68,7 @@ export const ProfileQR = ({ handleTrigger }: ProfileQRProps) => {
 			if (error === '') {
 				try {
 					await axios.post(
-						'http://' + env.host + ':' + env.port +'/auth/2fa/verify',
+						'https://' + env.host + ':' + env.port +'/auth/2fa/verify',
 						{
 							inputKey,
 						},

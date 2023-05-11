@@ -74,7 +74,7 @@ export class AuthService {
 			if (existingUser && existingUser.twoFactor === true) {
 				// User deja log avec 2fa true
 				return res.redirect(
-					"http://" +
+					"https://" +
 						this.config.get("HOST_T") +
 						":" +
 						this.config.get("PORT_GLOBAL") +
@@ -86,13 +86,13 @@ export class AuthService {
 				this.signToken(res, existingUser);
 				if (existingUser.config)
 					return res.redirect(
-						"http://" +
+						"https://" +
 							this.config.get("HOST_T") +
 							":" +
 							this.config.get("PORT_GLOBAL")
 					);
 				return res.redirect(
-					"http://" +
+					"https://" +
 						this.config.get("HOST_T") +
 						":" +
 						this.config.get("PORT_GLOBAL") +
@@ -107,7 +107,7 @@ export class AuthService {
 			});
 			this.signToken(res, createdUser);
 			return res.redirect(
-				"http://" +
+				"https://" +
 					this.config.get("HOST_T") +
 					":" +
 					this.config.get("PORT_GLOBAL") +

@@ -20,7 +20,7 @@ export const Invite = ({ socket }: { socket: Socket }) => {
 		const fetchInvites = async () => {
 			try {
 				const response = await axios.get(
-					'http://' + env.host + ':' + env.port + '/chat/invites',
+					'https://' + env.host + ':' + env.port + '/chat/invites',
 					{ withCredentials: true }
 				);
 				setInvites(response.data);
@@ -37,7 +37,7 @@ export const Invite = ({ socket }: { socket: Socket }) => {
 		if (Channel.id === 0) return;
 		try {
 			const response = await axios.get(
-				'http://' +
+				'https://' +
 					env.host +
 					':' +
 					env.port +
@@ -62,7 +62,7 @@ export const Invite = ({ socket }: { socket: Socket }) => {
 	const JoinPrivateChannel = async (Channel: ChannelDto) => {
 		try {
 			await axios.post(
-				'http://' +
+				'https://' +
 					env.host +
 					':' +
 					env.port +
@@ -86,7 +86,7 @@ export const Invite = ({ socket }: { socket: Socket }) => {
 	const DeclineInvite = async (Channel: ChannelDto) => {
 		try {
 			axios.delete(
-				'http://' +
+				'https://' +
 					env.host +
 					':' +
 					env.port +
@@ -151,7 +151,7 @@ const InputFlat = ({
 		const FetchUsers = async () => {
 			try {
 				const response = await axios.get(
-					'http://' + env.host + ':' + env.port + '/users/login',
+					'https://' + env.host + ':' + env.port + '/users/login',
 					{ withCredentials: true }
 				);
 				const users = response.data.filter(
@@ -236,7 +236,7 @@ export const InviteChannel = ({
 		if (!Channel) return;
 		try {
 			await axios.post(
-				'http://' +
+				'https://' +
 					env.host +
 					':' +
 					env.port +

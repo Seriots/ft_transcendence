@@ -24,7 +24,7 @@ const GameRoute = ({
 		if (!room)
 		{
 			axios
-				.get('http://' + env.host + ':' + env.port +'/queues/joinable', {
+				.get('https://' + env.host + ':' + env.port +'/queues/joinable', {
 					withCredentials: true,
 				})
 				.then((res) => {
@@ -45,7 +45,7 @@ const GameRoute = ({
 		}
 		else if (room)
 		{
-			axios.get('http://' + env.host + ':' + env.port +'/games/progress/' + room, {
+			axios.get('https://' + env.host + ':' + env.port +'/games/progress/' + room, {
 				withCredentials: true,
 				}).then((res) => {
 					if (res.data.spec || reload === 2)

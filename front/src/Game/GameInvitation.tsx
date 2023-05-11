@@ -35,7 +35,7 @@ const InvitationCard = ({
 					className="game-invitation-card-avatar"
 					src={
 						avatar
-							? 'http://' +
+							? 'https://' +
 							  env.host +
 							  ':' +
 							  env.port +

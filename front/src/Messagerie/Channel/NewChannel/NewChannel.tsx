@@ -100,7 +100,7 @@ export const NewChannel = ({
 					break;
 			}
 			await axios.post(
-				'http://' + env.host + ':' + env.port + '/chat/create/' + name,
+				'https://' + env.host + ':' + env.port + '/chat/create/' + name,
 				{ state, password },
 				{ withCredentials: true }
 			);
@@ -108,7 +108,7 @@ export const NewChannel = ({
 			setPassword('');
 			handleNewDmTrigger();
 			const Channels = await axios.get<ChannelDto[]>(
-				'http://' + env.host + ':' + env.port + '/chat/channels',
+				'https://' + env.host + ':' + env.port + '/chat/channels',
 				{ withCredentials: true }
 			);
 			setChannelList(Channels.data);
@@ -219,7 +219,7 @@ export const UpdateChannel = ({
 					break;
 			}
 			await axios.patch(
-				'http://' +
+				'https://' +
 					env.host +
 					':' +
 					env.port +
@@ -237,7 +237,7 @@ export const UpdateChannel = ({
 			setPassword('');
 			handleNewDmTrigger();
 			const Channels = await axios.get<ChannelDto[]>(
-				'http://' + env.host + ':' + env.port + '/chat/channels',
+				'https://' + env.host + ':' + env.port + '/chat/channels',
 				{ withCredentials: true }
 			);
 			setChannelList(Channels.data);

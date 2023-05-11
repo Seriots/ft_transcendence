@@ -105,7 +105,7 @@ export const MainInfo = ({
 			setTriggerQR(true);
 		} else {
 			try {
-				await axios.delete('http://' + env.host + ':' + env.port +'/auth/2fa/disable', {
+				await axios.delete('https://' + env.host + ':' + env.port +'/auth/2fa/disable', {
 					withCredentials: true,
 				});
 				setDefaultToggle(false);

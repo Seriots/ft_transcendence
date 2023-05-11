@@ -10,7 +10,7 @@ const PlayerCard = ({playerInfo}:any) => {
 	return (
 		<div className="game-creation-player-card">
 			<div className="game-player-card-avatar-underdiv">
-				<img className="game-player-card-avatar" src={playerInfo.avatar ? "http://" + env.host + ":" + env.port +"/" + playerInfo.avatar : ""} alt="Avatar" />
+				<img className="game-player-card-avatar" src={playerInfo.avatar ? "https://" + env.host + ":" + env.port +"/" + playerInfo.avatar : ""} alt="Avatar" />
 			</div>
 			<div className="game-player-card-title">
 				<div>Pseudo</div>

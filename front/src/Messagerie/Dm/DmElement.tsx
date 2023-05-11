@@ -36,7 +36,7 @@ const InputFlat = ({
 		const FetchUsers = async () => {
 			try {
 				const response = await axios.get(
-					'http://' + env.host + ':' + env.port + '/users/login',
+					'https://' + env.host + ':' + env.port + '/users/login',
 					{ withCredentials: true }
 				);
 				const users = response.data.filter(
@@ -121,7 +121,7 @@ const NewDm = ({
 		const FetchBlocked = async () => {
 			try {
 				const response = await axios.get(
-					'http://' + env.host + ':' + env.port + '/friend/blocked',
+					'https://' + env.host + ':' + env.port + '/friend/blocked',
 					{ withCredentials: true }
 				);
 				setBlocked(response.data);
@@ -139,7 +139,7 @@ const NewDm = ({
 		}
 		try {
 			await axios.post(
-				'http://' + env.host + ':' + env.port + '/chat/dm/create',
+				'https://' + env.host + ':' + env.port + '/chat/dm/create',
 				{ username },
 				{ withCredentials: true }
 			);
@@ -195,7 +195,7 @@ const DmListElement = ({
 	const handleBlock = async (username: string) => {
 		try {
 			await axios.post(
-				'http://' +
+				'https://' +
 					env.host +
 					':' +
 					env.port +
@@ -342,7 +342,7 @@ const Beside = ({ socket, DM, userInfo }: Props) => {
 		const getMessages = async () => {
 			try {
 				const reponse = await axios.get(
-					'http://' +
+					'https://' +
 						env.host +
 						':' +
 						env.port +
@@ -481,7 +481,7 @@ export const DmElement = ({ socket, socketQueue }: { socket: Socket, socketQueue
 		const fetchChats = async () => {
 			try {
 				const DMS = await axios.get<DirectMessageDto[]>(
-					'http://' + env.host + ':' + env.port + '/chat/dm',
+					'https://' + env.host + ':' + env.port + '/chat/dm',
 					{ withCredentials: true }
 				);
 				setDMList(DMS.data);

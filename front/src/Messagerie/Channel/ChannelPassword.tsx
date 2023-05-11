@@ -69,7 +69,7 @@ export const ChannelPassword = ({
 		if (!password) return;
 		try {
 			await axios.post(
-				'http://' + env.host + ':' + env.port +'/chat/join/' + Channel.name,
+				'https://' + env.host + ':' + env.port +'/chat/join/' + Channel.name,
 				{ state: 'PROTECTED', password: password },
 				{ withCredentials: true }
 			);

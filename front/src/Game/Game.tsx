@@ -22,7 +22,7 @@ function Podium({ color, height, point, avatar, avatar2 = null, crown = null }: 
 					) : null}
 					<img
 						src={
-							'http://' + env.host + ':' + env.port +'/' + avatar
+							'https://' + env.host + ':' + env.port +'/' + avatar
 						}
 						alt="a"
 						className="game-end-podium-avatar"
@@ -30,7 +30,7 @@ function Podium({ color, height, point, avatar, avatar2 = null, crown = null }: 
 					{avatar2 ? (
 						<img
 							src={
-								'http://' + env.host + ':' + env.port +'/' + avatar2
+								'https://' + env.host + ':' + env.port +'/' + avatar2
 							}
 							alt="a"
 							className="game-end-podium-avatar"
@@ -57,7 +57,7 @@ function Game({ socketGame, room, login }: any) {
 	const env = useSelector(selectEnv);
 
 	useEffect(() => {
-		axios.get('http://' + env.host + ':' + env.port + '/games/spec/' + room, {
+		axios.get('https://' + env.host + ':' + env.port + '/games/spec/' + room, {
 			withCredentials: true,
 			}).then((res) => {
 				if (res.data.isSpec !== undefined) {

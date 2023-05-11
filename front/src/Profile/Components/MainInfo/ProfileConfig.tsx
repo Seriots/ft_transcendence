@@ -35,7 +35,7 @@ export const ProfileConfig = ({ handleTrigger }: ProfileConfigProps) => {
 		async function fetchData() {
 			try {
 				const response = await axios.get(
-					'http://' + env.host + ':' + env.port + '/users/all/pseudo',
+					'https://' + env.host + ':' + env.port + '/users/all/pseudo',
 					{
 						withCredentials: true,
 					}
@@ -84,7 +84,7 @@ export const ProfileConfig = ({ handleTrigger }: ProfileConfigProps) => {
 				formData.append('source', avatar[currentIndex].source);
 				try {
 					await axios.post(
-						'http://' +
+						'https://' +
 							env.host +
 							':' +
 							env.port +

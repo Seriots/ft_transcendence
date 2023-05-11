@@ -13,7 +13,7 @@ const QrCode = () => {
 		async function fetchQR() {
 			try {
 				const { data } = await axios.post(
-					'http://' + env.host + ':' + env.port +'/auth/2fa/setup',
+					'https://' + env.host + ':' + env.port +'/auth/2fa/setup',
 					{},
 					{
 						withCredentials: true,

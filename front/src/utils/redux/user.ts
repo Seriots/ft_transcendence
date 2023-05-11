@@ -23,7 +23,7 @@ const env = {
 
 export async function fetchOrUpdateUser(store: any) {
 	try {
-		const response = await axios.get('http://' + env.host + ':' + env.port +'/auth/verify', {
+		const response = await axios.get('https://' + env.host + ':' + env.port +'/auth/verify', {
 			withCredentials: true,
 		});
 		const data = response.data;
@@ -42,10 +42,10 @@ export async function fetchOrUpdateUser(store: any) {
 	}
 	store.dispatch(userFetching());
 	try {
-		const response = await axios.get('http://' + env.host + ':' + env.port +'/users/me', {
+		const response = await axios.get('https://' + env.host + ':' + env.port +'/users/me', {
 			withCredentials: true,
 		});
-		response.data.avatar = `http://${env.host}:${env.port}/${response.data.avatar}`;
+		response.data.avatar = `https://${env.host}:${env.port}/${response.data.avatar}`;
 		const data = response.data;
 		store.dispatch(userResolved(data));
 	} catch (error) {

@@ -40,7 +40,7 @@ export const MyFriends = ({
 		if (username === '') return;
 		try {
 			await axios.post(
-				'http://' + env.host + ':' + env.port + '/chat/dm/create',
+				'https://' + env.host + ':' + env.port + '/chat/dm/create',
 				{ username },
 				{ withCredentials: true }
 			);
@@ -71,7 +71,7 @@ export const MyFriends = ({
 										className="customLink">
 										<img
 											className="myFriendsImgUser"
-											src={`http://${env.host}:${env.port}/${friend.avatar}`}
+											src={`https://${env.host}:${env.port}/${friend.avatar}`}
 											alt="avatar"
 										/>
 										<div className="myFriendsInfoTxt">

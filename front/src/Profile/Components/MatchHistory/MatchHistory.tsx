@@ -59,7 +59,7 @@ export const MatchHistory = ({ userData }: { userData: any }) => {
 		data,
 		error,
 	}: { isLoading: boolean; data: any; error: boolean } = useAxios(
-		'http://' + env.host + ':' + env.port + '/users/matchs/' + userData.username
+		'https://' + env.host + ':' + env.port + '/users/matchs/' + userData.username
 	);
 
 	if (isLoading && !error) return <></>;
@@ -91,7 +91,7 @@ export const MatchHistory = ({ userData }: { userData: any }) => {
 					<td className="teamMatch">
 						{history.team.map((teamMember: any, index: number) => (
 							<TeamMatch
-								img={'http://' + env.host + ':' + env.port + '/' + teamMember.avatar}
+								img={'https://' + env.host + ':' + env.port + '/' + teamMember.avatar}
 								level={Math.floor(teamMember.experience / 1000)}
 								username={teamMember.username}
 								index={index}
@@ -113,7 +113,7 @@ export const MatchHistory = ({ userData }: { userData: any }) => {
 								history.win.map((winner: any, index: number) => (
 									<TeamMatch
 										img={
-											'http://' + env.host + ':' + env.port + '/' + winner.avatar
+											'https://' + env.host + ':' + env.port + '/' + winner.avatar
 										}
 										level={Math.floor(winner.experience / 1000)}
 										username={winner.username}
@@ -124,7 +124,7 @@ export const MatchHistory = ({ userData }: { userData: any }) => {
 							) : (
 								<TeamMatch
 									img={
-										'http://' + env.host + ':' + env.port + '/' +
+										'https://' + env.host + ':' + env.port + '/' +
 										history.win.avatar
 									}
 									level={Math.floor(

@@ -37,7 +37,7 @@ export const FilteredUsers: React.FC<FilteredUsersProps> = ({
 		async (username: string, userId: number) => {
 			try {
 				const response = await axios.get(
-					'http://' +
+					'https://' +
 						env.host +
 						':' +
 						env.port +
@@ -90,7 +90,7 @@ export const FilteredUsers: React.FC<FilteredUsersProps> = ({
 											to={'/profile/' + user.username}>
 											<img
 												className="imgUser"
-												src={`http://${env.host}:${env.port}/${user.avatar}`}
+												src={`https://${env.host}:${env.port}/${user.avatar}`}
 												alt="username avatar"
 											/>
 											<div className="friendsInfoTxt">

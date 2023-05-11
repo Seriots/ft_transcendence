@@ -37,7 +37,7 @@ export const Friends = ({ userData }: { userData: any }) => {
 		data,
 		error,
 	}: { isLoading: boolean; data: any; error: boolean } = useAxios(
-		'http://' + env.host + ':' + env.port + '/users/friends/' + userData.username
+		'https://' + env.host + ':' + env.port + '/users/friends/' + userData.username
 	);
 
 	if (isLoading && !error) return <></>;
@@ -51,7 +51,7 @@ export const Friends = ({ userData }: { userData: any }) => {
 							<Friend
 								key={index}
 								avatar={
-									'http://' + env.host + ':' + env.port + '/' + friend.avatar
+									'https://' + env.host + ':' + env.port + '/' + friend.avatar
 								}
 								username={friend.username}
 								level={Math.floor(friend.experience / 1000)}

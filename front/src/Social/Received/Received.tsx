@@ -34,7 +34,7 @@ export const Received = ({
 									className="customLink">
 									<img
 										className="receivedImgUser"
-										src={`http://${env.host}:${env.port}/${friend.avatar}`}
+										src={`https://${env.host}:${env.port}/${friend.avatar}`}
 										alt="avatar"
 									/>
 									<div className="receivedFriendsInfoTxt">

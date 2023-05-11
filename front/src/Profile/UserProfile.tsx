@@ -25,13 +25,13 @@ export const UserProfile = () => {
 		data,
 		error,
 	}: { isLoading: boolean; data: any; error: boolean } = useAxios(
-		'http://' + env.host + ':' + env.port + '/users/username/' + username
+		'https://' + env.host + ':' + env.port + '/users/username/' + username
 	);
 
 	useEffect(() => {
 		if (data)
 			data.avatar =
-				'http://' + env.host + ':' + env.port + '/' + data.avatar;
+				'https://' + env.host + ':' + env.port + '/' + data.avatar;
 		setUser(data);
 	}, [data, env.host, env.port]);
 

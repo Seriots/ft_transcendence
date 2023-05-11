@@ -25,7 +25,7 @@ const Beside = ({ socket }: { socket: Socket }) => {
 	useEffect(() => {
 		const handleMessage = async (message: any) => {
 			const reponse = await axios.get(
-				'http://' +
+				'https://' +
 					env.host +
 					':' +
 					env.port +

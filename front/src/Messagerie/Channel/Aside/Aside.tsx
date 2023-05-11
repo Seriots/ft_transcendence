@@ -75,7 +75,7 @@ const ChannelListElement = ({
 		if (Channel.id === 0) return;
 		try {
 			const response = await axios.get(
-				'http://' +
+				'https://' +
 					env.host +
 					':' +
 					env.port +
@@ -101,7 +101,7 @@ const ChannelListElement = ({
 		if (!selectedChannel.name) return;
 		try {
 			const response = await axios.get(
-				'http://' +
+				'https://' +
 					env.host +
 					':' +
 					env.port +
@@ -118,7 +118,7 @@ const ChannelListElement = ({
 	const handleSelectChannel = async (channel: ChannelDto) => {
 		try {
 			const response = await axios.get(
-				'http://' +
+				'https://' +
 					env.host +
 					':' +
 					env.port +
@@ -324,7 +324,7 @@ const UserChannelElement = ({
 			if (!channel.name)
 				try {
 					const response = await axios.get(
-						'http://' +
+						'https://' +
 							env.host +
 							':' +
 							env.port +
@@ -346,7 +346,7 @@ const UserChannelElement = ({
 			if (!user.username)
 				try {
 					const response = await axios.get(
-						'http://' +
+						'https://' +
 							env.host +
 							':' +
 							env.port +
@@ -375,7 +375,7 @@ const UserChannelElement = ({
 		if (!selectedChannel.name) return;
 		try {
 			const response = await axios.get(
-				'http://' +
+				'https://' +
 					env.host +
 					':' +
 					env.port +
@@ -393,7 +393,7 @@ const UserChannelElement = ({
 		if (!channel.name) return;
 		try {
 			await axios.post(
-				'http://' +
+				'https://' +
 					env.host +
 					':' +
 					env.port +
@@ -415,7 +415,7 @@ const UserChannelElement = ({
 		if (!channel.name) return;
 		try {
 			await axios.post(
-				'http://' +
+				'https://' +
 					env.host +
 					':' +
 					env.port +
@@ -477,7 +477,7 @@ const UserChannelElement = ({
 		if (!user.username) return;
 		try {
 			await axios.post(
-				'http://' +
+				'https://' +
 					env.host +
 					':' +
 					env.port +
@@ -497,7 +497,7 @@ const UserChannelElement = ({
 		if (!user.username) return;
 		try {
 			await axios.post(
-				'http://' +
+				'https://' +
 					env.host +
 					':' +
 					env.port +
@@ -529,7 +529,7 @@ const UserChannelElement = ({
 						? 'dm-list-element-avatar admin-avatar'
 						: 'dm-list-element-avatar'
 				}
-				src={'http://' + env.host + ':' + env.port + '/' + user.avatar}
+				src={'https://' + env.host + ':' + env.port + '/' + user.avatar}
 				alt=""
 			/>
 			<h4 className={userIsAdmin ? 'admin' : undefined}>
@@ -595,7 +595,7 @@ const UserChannelList = ({
 		const getBans = async () => {
 			if (!channel.name) return;
 			const response = await axios.get(
-				'http://' +
+				'https://' +
 					env.host +
 					':' +
 					env.port +

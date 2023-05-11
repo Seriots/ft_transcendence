@@ -51,7 +51,7 @@ export class ChatGateway implements OnGatewayConnection, OnGatewayDisconnect {
 					channel: channel,
 					createdAt: new Date(),
 					avatar:
-						"http://" +
+						"https://" +
 						this.config.get("HOST_T") +
 						":" +
 						this.config.get("PORT_BACK") +
@@ -105,7 +105,7 @@ export class ChatGateway implements OnGatewayConnection, OnGatewayDisconnect {
 				content: `${username} has joined the channel`,
 				channel: channel,
 				avatar:
-					"http://" +
+					"https://" +
 					this.config.get("HOST_T") +
 					":" +
 					this.config.get("PORT_BACK") +
@@ -172,7 +172,7 @@ export class ChatGateway implements OnGatewayConnection, OnGatewayDisconnect {
 			}
 
 			message["avatar"] =
-				"http://" +
+				"https://" +
 				this.config.get("HOST_T") +
 				":" +
 				this.config.get("PORT_BACK") +
@@ -261,7 +261,7 @@ export class ChatGateway implements OnGatewayConnection, OnGatewayDisconnect {
 					receiver,
 					DMid,
 					avatar:
-						"http://" +
+						"https://" +
 						this.config.get("HOST_T") +
 						":" +
 						this.config.get("PORT_BACK") +
@@ -648,7 +648,7 @@ export class ChatGateway implements OnGatewayConnection, OnGatewayDisconnect {
 			channel: channel,
 			createdAt: new Date(),
 			avatar:
-				"http://" +
+				"https://" +
 				this.config.get("HOST_T") +
 				":" +
 				this.config.get("PORT_BACK") +

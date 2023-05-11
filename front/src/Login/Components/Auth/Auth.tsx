@@ -74,7 +74,7 @@ export const Auth2fa = () => {
 			if (error === '') {
 				try {
 					const response = await axios.post(
-						'http://' +
+						'https://' +
 							env.host +
 							':' +
 							env.port +
@@ -131,7 +131,7 @@ export const AuthConfig = () => {
 		async function fetchData() {
 			try {
 				const response = await axios.get(
-					'http://' + env.host + ':' + env.port + '/users/all/pseudo',
+					'https://' + env.host + ':' + env.port + '/users/all/pseudo',
 					{
 						withCredentials: true,
 					}
@@ -164,7 +164,7 @@ export const AuthConfig = () => {
 				formData.append('file', avatar[currentIndex].file);
 				try {
 					await axios.post(
-						'http://' + env.host + ':' + env.port + '/users/config',
+						'https://' + env.host + ':' + env.port + '/users/config',
 						formData,
 						{
 							withCredentials: true,
@@ -231,7 +231,7 @@ export const Auth2faConfig = () => {
 			if (error === '') {
 				try {
 					await axios.post(
-						'http://' +
+						'https://' +
 							env.host +
 							':' +
 							env.port +

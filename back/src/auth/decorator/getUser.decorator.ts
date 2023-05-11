@@ -34,7 +34,7 @@ export const GetUser = createParamDecorator(
 		try {
 			if (jwt.verify(token, process.env.JWT_SECRET)) {
 				const user = await axios.get(
-					"http://" +
+					"https://" +
 						config.get("HOST_T") +
 						":" +
 						config.get("PORT_BACK") +

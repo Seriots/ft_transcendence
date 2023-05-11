@@ -33,7 +33,7 @@ export const BlockedUser = ({
 									className="customLink">
 									<img
 										className="receivedImgUser"
-										src={`http://${env.host}:${env.port}/${userBlockedInfo?.avatar}`}
+										src={`https://${env.host}:${env.port}/${userBlockedInfo?.avatar}`}
 										alt="avatar"
 									/>
 									<div className="receivedFriendsInfoTxt">

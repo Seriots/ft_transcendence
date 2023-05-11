@@ -40,7 +40,7 @@ export const Achievements = ({ userData }: { userData: any }) => {
 		data,
 		error,
 	}: { isLoading: boolean; data: any; error: boolean } = useAxios(
-		'http://' +
+		'https://' +
 			env.host +
 			':' +
 			env.port +

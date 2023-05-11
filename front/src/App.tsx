@@ -44,13 +44,13 @@ function App(this: any) {
 	useEffect(() => {
 		if (user.status === 'resolved' && user.auth) {
 			setSocketQueue(
-				io('http://' + env.host + ':' + env.port + '/queue', {
+				io('https://' + env.host + ':' + env.port + '/queue', {
 					transports: ['websocket'],
 					withCredentials: true,
 				})
 			);
 			setSocketGame(
-				io('http://' + env.host + ':' + env.port + '/game', {
+				io('https://' + env.host + ':' + env.port + '/game', {
 					transports: ['websocket'],
 					withCredentials: true,
 				})

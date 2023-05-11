@@ -71,7 +71,7 @@ export const ChannelsProvider = ({ children }: { children: ReactNode }) => {
 		const fetchChats = async () => {
 			try {
 				const Channels = await axios.get<ChannelDto[]>(
-					'http://' + env.host + ':' + env.port + '/chat/channels',
+					'https://' + env.host + ':' + env.port + '/chat/channels',
 					{ withCredentials: true }
 				);
 				setChannelList(Channels.data);
@@ -83,7 +83,7 @@ export const ChannelsProvider = ({ children }: { children: ReactNode }) => {
 			if (!selectedChannel.name) return;
 			try {
 				const response = await axios.get(
-					'http://' +
+					'https://' +
 						env.host +
 						':' +
 						env.port +

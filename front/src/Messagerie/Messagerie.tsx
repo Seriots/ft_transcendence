@@ -51,7 +51,7 @@ export const Messagerie = ({ socketQueue }: { socketQueue: Socket }) => {
 	const env = useSelector(selectEnv);
 
 	useEffect(() => {
-		const newSocket = io('http://' + env.host + ':' + env.port + '/chat', {
+		const newSocket = io('https://' + env.host + ':' + env.port + '/chat', {
 			transports: ['websocket'],
 			withCredentials: true,
 		});

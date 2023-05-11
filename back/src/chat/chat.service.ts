@@ -764,7 +764,7 @@ export class ChatService {
 						sender: {
 							...DM.sender,
 							avatar:
-								"http://" +
+								"https://" +
 								this.config.get("HOST_T") +
 								":" +
 								this.config.get("PORT_BACK") +
@@ -774,7 +774,7 @@ export class ChatService {
 						receiver: {
 							...DM.receiver,
 							avatar:
-								"http://" +
+								"https://" +
 								this.config.get("HOST_T") +
 								":" +
 								this.config.get("PORT_BACK") +
@@ -888,7 +888,7 @@ export class ChatService {
 					return {
 						...message,
 						avatar:
-							"http://" +
+							"https://" +
 							this.config.get("HOST_T") +
 							":" +
 							this.config.get("PORT_BACK") +
@@ -953,7 +953,7 @@ export class ChatService {
 					return {
 						...message,
 						avatar:
-							"http://" +
+							"https://" +
 							this.config.get("HOST_T") +
 							":" +
 							this.config.get("PORT_BACK") +

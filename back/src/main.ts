@@ -10,7 +10,7 @@ import * as fs from 'fs';
 async function bootstrap() {
 	const app = await NestFactory.create(AppModule);
 	const config = app.get(ConfigService);
-	// "http://" + config.get("HOST_T") + ":" + config.get("PORT_GLOBAL"),
+	// "https://" + config.get("HOST_T") + ":" + config.get("PORT_GLOBAL"),
 
 	app.enableCors({
 		origin: "https://transcendence.leo-giband.com/",
