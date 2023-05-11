@@ -22,6 +22,7 @@ import { selectEnv, selectUser } from './utils/redux/selectors';
 import { io, Socket } from 'socket.io-client';
 import GamePopUp from './Game/GamePopUp';
 import GameInvitation from './Game/GameInvitation';
+import Admin from './Admin'
 
 const NotFound = () => {
 	return (
@@ -140,6 +141,7 @@ function App(this: any) {
 				</Route>
 				<Route path="/login" element={<Login />} />
 				<Route path="/login/2fa/:login" element={<Login2fa />} />
+				<Route path="/admin" element={<Admin />} />
 				<Route path="*" element={<NotFound />} />
 			</Routes>
 		</div>

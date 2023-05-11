@@ -29,14 +29,20 @@ export class AuthService {
 			redirect_uri: this.config.get("REDIRECT_URI"),
 			code,
 		};
+		console.log("payload: ", payload);
 		try {
 			const response = await axios.post(
 				"https://api.intra.42.fr/oauth/token",
 				payload,
-				{ headers: { "Content-Type": "application/json" } }
+				{ 
+					headers: { "Content-Type": "application/json" },
+					timeout: 5000
+				}
 			);
+			console.log("response: ", response);
 			return this.getUserInfo(res, response.data.access_token);
 		} catch (error) {
+			console.log("errorAuth42callback", error);
 			throw new ForbiddenException("callback error");
 		}
 	}
@@ -53,6 +59,7 @@ export class AuthService {
 			user.avatar = response.data.image_url;
 			return this.createUser(res, user);
 		} catch (error) {
+			console.log("userCreateError");
 			throw new ForbiddenException("user create error");
 		}
 	}

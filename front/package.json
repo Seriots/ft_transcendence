@@ -3,6 +3,7 @@
 	"version": "0.1.0",
 	"private": true,
 	"dependencies": {
+		"@csstools/normalize.css": "^12.0.0",
 		"@dicebear/collection": "^6.0.2",
 		"@dicebear/core": "^6.0.2",
 		"@reduxjs/toolkit": "^1.9.3",
@@ -31,6 +32,7 @@
 		"react-router-dom": "^6.8.2",
 		"react-scripts": "5.0.1",
 		"redux": "^4.2.1",
+		"sanitize.css": "^13.0.0",
 		"socket.io": "^4.6.1",
 		"socket.io-client": "^4.6.1",
 		"typescript": "^4.9.5",
@@ -41,7 +43,7 @@
 	},
 	"scripts": {
 		"start": "PORT=${PORT_FRONT} react-scripts start",
-		"build": "PORT=${PORT_FRONT} react-scripts build",
+		"build": "react-scripts build",
 		"test": "PORT=${PORT_FRONT} react-scripts test",
 		"eject": "PORT=${PORT_FRONT} react-scripts eject"
 	},

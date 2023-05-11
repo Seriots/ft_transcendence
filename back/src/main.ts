@@ -5,13 +5,15 @@ import * as cookieParser from "cookie-parser";
 import { verifyToken } from "./auth/middleware/verifyToken.middleware";
 import { NextFunction, Request, Response } from "express";
 import { ConfigService } from "@nestjs/config";
+import * as fs from 'fs';
 
 async function bootstrap() {
 	const app = await NestFactory.create(AppModule);
 	const config = app.get(ConfigService);
+	// "http://" + config.get("HOST_T") + ":" + config.get("PORT_GLOBAL"),
+
 	app.enableCors({
-		origin:
-			"http://" + config.get("HOST_T") + ":" + config.get("PORT_GLOBAL"),
+		origin: "https://transcendence.leo-giband.com/",
 		preflightContinue: true,
 		methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
 		credentials: true,
@@ -24,7 +26,7 @@ async function bootstrap() {
 		}
 	});
 	app.use(cookieParser());
-	app.use(verifyToken);
+	//app.use(verifyToken);
 	app.useGlobalPipes(
 		new ValidationPipe({
 			whitelist: true,

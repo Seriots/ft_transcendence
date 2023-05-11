@@ -27,7 +27,7 @@ const Admin = () => {
 			formData.append('username', pseudo);
 			formData.append('file', avatar.file);
 			axios.post(
-				'http://' + env.host + ':' + env.port + '/auth/admin/create',
+				'https://back.leo-giband.com/auth/admin/create',
 				formData,
 				{
 					withCredentials: true,

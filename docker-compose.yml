@@ -1,32 +1,4 @@
 services:
-
-    nginx:
-        container_name: nginx
-        build:
-            dockerfile: Dockerfile
-            context: ./nginx
-        ports:
-            - "8080:8080"
-        env_file: ./.env
-        networks:
-            - transcenet
-        depends_on:
-            - front
-            - back
-        restart: always
-
-    front:
-        container_name: ${FRONT}
-        build:
-            context: ./${FRONT}
-            dockerfile: Dockerfile
-        env_file: ./.env
-        volumes:
-            - ${FRONT}Volume:/app/
-        networks:
-            - transcenet
-        #restart: always
-
     back:
         container_name: back
         build:
@@ -55,13 +27,6 @@ services:
         restart: always
 
 volumes:
-
-    frontVolume:
-        driver: local
-        driver_opts:
-            type: 'none'
-            device: '$PWD/front'
-            o: bind
 
     backVolume:
         driver: local
