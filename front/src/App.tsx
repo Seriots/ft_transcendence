@@ -58,8 +58,8 @@ function App(this: any) {
 		}
 	}, [user, env.host, env.port]);
 
-	if (user.status !== 'resolved' && user.status !== 'notAuth')
-		return <div></div>;
+//	if (user.status !== 'resolved' && user.status !== 'notAuth')
+//		return <div></div>;
 	return (
 		<div>
 			<GamePopUp
