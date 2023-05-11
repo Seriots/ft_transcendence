@@ -58,6 +58,7 @@ function App(this: any) {
 		}
 	}, [user, env.host, env.port]);
 
+	console.log("user", user)
 	if (user.status !== 'resolved' && user.status !== 'notAuth')
 		return <div></div>;
 	return (
